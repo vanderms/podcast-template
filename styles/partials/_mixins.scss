@@ -12,7 +12,14 @@ $breakpoints: (
 @mixin media($size) {
   $breakpoint: map.get($breakpoints, $size);
 
-  @media screen and (min-width: $breakpoint) {
+  @media screen and (max-width: $breakpoint) {
     @content;
   }
 }
+
+
+@mixin container {
+  width: 1180px;
+  margin-inline: auto;
+}
+

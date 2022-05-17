@@ -16,8 +16,8 @@ export default function Navbar() {
         <li><Link href='/blog'><a className="navlink">Blog</a></Link></li>
       </ul>
       <ul className="ctalink-list">
-         <li><Link href='/episodes'><a className="cta">Episodes</a></Link></li>
-        <li><Link href='/about'><a className="cta">About</a></Link></li>
+         <li><Link href='/recent-episodes'><a className="ctalink secondary">Recent Episodes</a></Link></li>
+        <li><Link href='#'><a className="ctalink primary">Subscribe</a></Link></li>
       </ul>
     </nav>
   )

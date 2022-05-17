@@ -2,6 +2,7 @@
 
 .nv-navbar {
   @include container;
+  margin-top: 24px;
   height: 74px;
   display: flex;
   justify-content: space-between;
@@ -21,10 +22,6 @@
     margin-left: -90.5px;
   }
 
-  .ctalink-list{
-    gap: 20px;
-  }
-
   .navlink {
     font-style: normal;
     font-weight: 700;
@@ -32,4 +29,25 @@
     line-height: 160%;
     color: #000000;
   }
+
+  .ctalink-list {
+    gap: 20px;
+  }
+
+  .ctalink{
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+
+    &.primary {
+      background-color: var(--black);
+      color: var(--white);
+    }
+
+    &.secondary{
+      border: 2px solid var(--black);
+    }
+  }
+
 }

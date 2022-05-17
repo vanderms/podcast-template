@@ -6,8 +6,8 @@ export default function Navbar() {
   return (
     <nav className="nv-navbar">
       <Link href='/'>
-        <a className="logo">
-          <Image src='/assets/logo.svg' width={74} height={74}></Image>
+        <a className="logo" aria-label="homepage">
+          <Image src='/assets/logo.svg' width={74} height={74} alt=''></Image>
         </a>
       </Link>
       <ul className="navlink-list">

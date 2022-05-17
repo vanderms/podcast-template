@@ -18,8 +18,12 @@ $breakpoints: (
 }
 
 
-@mixin container {
+@mixin grid-container {
   width: 1180px;
   margin-inline: auto;
+}
+
+@mixin page-padding-container{
+  padding-inline: Max(50vw - 720px, 0px);
 }
 

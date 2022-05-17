@@ -1,0 +1,73 @@
+@use '../utilities/mixins' as *;
+@use '../utilities/typography';
+
+
+.nv-section-hero {
+  position: relative;
+  @include page-padding-container;
+  padding-top: 162px;
+  padding-bottom: 140px;
+  margin-top: -98px;
+  background-color: var(--champagne);
+
+  .header::before {
+    content: '';
+    display: block;
+    width: 326px;
+    height: 593px;
+    position: absolute;
+    top: 70px;
+    background-image: url(/assets/hero-details-left.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  header::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 156px;
+    height: 217px;
+    top: 235px;
+    right: 0px;
+    margin-right: calc(60px + Max(50vw - 720px, 0px));
+
+    background-image: url(/assets/hero-details-right.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .title {
+    @include typography.heading;
+
+    strong {
+      display: block;
+      color: var(--vermillion);
+    }
+  }
+
+  .copy {
+    margin: 40px auto 0px;
+    width: 374px;
+    @include typography.body;
+    text-align: center;
+    color: var(--davis-grey);
+  }
+
+  .cta {
+    margin: 60px auto 0px;
+    display: grid;
+    place-content: center;   
+    width: 184px;
+    height: 65px;
+    border-radius: 8px;
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+}

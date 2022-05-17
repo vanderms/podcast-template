@@ -1,7 +1,9 @@
-@use './mixins' as *;
+@use '../utilities/mixins' as *;
 
 .nv-navbar {
-  @include container;
+  @include grid-container;
+  position: relative;
+  z-index: 999;
   margin-top: 24px;
   height: 74px;
   display: flex;
